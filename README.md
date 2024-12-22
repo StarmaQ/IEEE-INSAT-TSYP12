@@ -18,4 +18,9 @@ python app.py
 The backend should be hosted locally: 
 http://127.0.0.1:5000
 
+Our computer vision model is in a docker container, you'd have to download it (it's 10gb :D), download Docker desktop and run this command
+```
+docker run --gpus all -p 9001:9001 roboflow/roboflow-inference-server-gpu
+```
+
 If you find any issues, contact: starmaq101@gmail.com
