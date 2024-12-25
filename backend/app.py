@@ -353,7 +353,7 @@ def generate():
         max_pitch, min_pitch = -10, -30
         max_height, min_height = 550, 280
 
-        position = get_nearest_bird_position()
+        position = get_nearest_bird_position( )
         bird_position = clamp((float(position.split(",")[1])-min_height)/(max_height-min_height), 0, 1)
         gaze_position = clamp(1 - ((gaze["pitch"] / np.pi * 180)-min_pitch)/(max_pitch-min_pitch), 0, 1)
 
